@@ -23,8 +23,6 @@
     <a href="https://github.com/polokang/Portfolio/issues">Request Feature</a>
 </h3>
 
-## TL;DR
-
 You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [hunterzhou](https://github.com/polokang/Portfolio). Thanks!
 
 ## Built With
@@ -71,4 +69,4 @@ You will find all the components used and you can edit your information accordin
 
 Give a ⭐ if you like this website!
 
-<a href="https://www.buymeacoffee.com/hunterzhou" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height= "60px" width= "217px" ></a>
+<a href="https://buymeacoffee.com/hunterzhou" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height= "60px" width= "217px" ></a>
