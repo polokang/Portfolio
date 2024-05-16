@@ -4,10 +4,14 @@ import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn,FaMailBulk } from "react-icons/fa";
+
+const  handleEmailClick = () => {
+  const subject = encodeURIComponent('Your Subject Here');
+  const body = encodeURIComponent('Your email body here.');
+  window.location.href = `mailto:hunter.zhou.au@gmail.com?subject=${subject}&body=${body}`;
+};
 
 function Home2() {
   return (
@@ -19,36 +23,34 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              I am a full-stack developer proficient in languages such as
               <br />
-              <br />I am fluent in classics like
               <i>
-                <b className="purple"> C++, Javascript and Go. </b>
+                <b className="purple">  Javascript(Typescript),&nbsp;  C++,&nbsp;  Python and&nbsp;  Java. </b>
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              I am passionate about developing new web technologies and products, &nbsp;
+              <br />
               <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
+                as well as applications in {" "}
                 <b className="purple">
-                  Blockchain.
+                the Internet of Things (IoT) industry.
                 </b>
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+              Whenever possible, I utilize
+              with <b className="purple">React.js, Node.js</b> or
               <i>
                 <b className="purple">
                   {" "}
-                  Modern Javascript Library and Frameworks
+                  Next.js
                 </b>
               </i>
-              &nbsp; like
+              &nbsp; to quickly build new product systems on the
               <i>
-                <b className="purple"> React.js and Next.js</b>
+                <b className="purple"> Azure.</b>
               </i>
             </p>
           </Col>
@@ -77,16 +79,6 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
                   href="https://www.linkedin.com/in/hunter-zhou/"
                   target="_blank"
                   rel="noreferrer"
@@ -97,12 +89,13 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com"
+                  onClick={handleEmailClick}
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=hunter.zhou.au@gmail.com"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour home-social-icons"
+                  className="icon-colour  home-social-icons"
                 >
-                  <AiFillInstagram />
+                  <FaMailBulk />
                 </a>
               </li>
             </ul>

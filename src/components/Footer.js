@@ -2,10 +2,15 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn,FaMailBulk } from "react-icons/fa";
+
+const  handleEmailClick = () => {
+  const subject = encodeURIComponent('Your Subject Here');
+  const body = encodeURIComponent('Your email body here.');
+  window.location.href = `mailto:hunter.zhou.au@gmail.com?subject=${subject}&body=${body}`;
+};
+
 
 function Footer() {
   let date = new Date();
@@ -33,16 +38,6 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://twitter.com"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiOutlineTwitter />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
                 href="https://www.linkedin.com/in/hunter-zhou/"
                 style={{ color: "white" }}
                 target="_blank" 
@@ -52,15 +47,16 @@ function Footer() {
               </a>
             </li>
             <li className="social-icons">
-              <a
-                href="https://www.instagram.com"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiFillInstagram />
-              </a>
-            </li>
+                <a
+                  onClick={handleEmailClick}
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=hunter.zhou.au@gmail.com"
+                  style={{ color: "white" }}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaMailBulk />
+                </a>
+              </li>
           </ul>
         </Col>
       </Row>
