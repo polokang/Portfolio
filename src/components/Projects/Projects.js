@@ -28,8 +28,6 @@ function Projects() {
               production, while providing the sales department with a graphical interface to 
               visualize monthly sales and manage customer information. Additionally, the R&D 
               department can utilize AdminPage to monitor the running status of each new device."
-              // ghLink="https://github.com/polokang/Bits-0f-C0de"
-              // demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
 
@@ -50,7 +48,6 @@ function Projects() {
               isBlog={false}
               title="Aquariustech"
               description="Aquariustech is a company website built using the WordPress theme The7. The site utilizes the WPBakery plugin to edit pages and showcase company products, and the Tawk.to plugin to provide customers with online chat support."
-              //ghLink="https://github.com/polokang/Editor.io"
               demoLink="https://www.aquariustech.com.au/"
             />
           </Col>
