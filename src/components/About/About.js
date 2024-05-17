@@ -51,16 +51,15 @@ function About() {
         </h1>
         <Database />
         
-
-        <h1 className="project-heading">
-          <strong className="purple">Tools</strong>
-        </h1>
-        <Toolstack />
         <h1 className="project-heading">
           <strong className="purple">Cloud</strong>
         </h1>
         <Cloud />
 
+        <h1 className="project-heading">
+          <strong className="purple">Tools</strong>
+        </h1>
+        <Toolstack />
         
         <Github />
       </Container>

@@ -1,20 +1,16 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-} from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn,FaMailBulk } from "react-icons/fa";
-
-const  handleEmailClick = () => {
-  const subject = encodeURIComponent('Your Subject Here');
-  const body = encodeURIComponent('Your email body here.');
-  window.location.href = `mailto:hunter.zhou.au@gmail.com?subject=${subject}&body=${body}`;
-};
-
 
 function Footer() {
   let date = new Date();
   let year = date.getFullYear();
+  const  handleEmail = () => {
+    const subject = encodeURIComponent('Your Subject Here');
+    const body = encodeURIComponent('Your email body here.');
+    window.location.href = `mailto:hunter.zhou.au@gmail.com?subject=${subject}&body=${body}`;
+  };
   return (
     <Container fluid className="footer">
       <Row>
@@ -48,7 +44,7 @@ function Footer() {
             </li>
             <li className="social-icons">
                 <a
-                  onClick={handleEmailClick}
+                  onClick={handleEmail}
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=hunter.zhou.au@gmail.com"
                   style={{ color: "white" }}
                   target="_blank"
