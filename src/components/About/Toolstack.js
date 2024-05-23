@@ -3,8 +3,10 @@ import { Col, Row } from "react-bootstrap";
 import {
   SiDocker,
   SiPostman,
+  SiNginx,
   SiVercel,
-  SiKubernetes,
+  SiApache,
+  SiApachetomcat
 } from "react-icons/si";
 
 function Toolstack() {
@@ -14,13 +16,19 @@ function Toolstack() {
         <SiDocker />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiKubernetes />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
         <SiVercel />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiNginx  />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiApache  />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiApachetomcat  />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPostman />
       </Col>
     </Row>
   );
