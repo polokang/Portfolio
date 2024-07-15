@@ -35,6 +35,10 @@ function ResumeNew() {
           <Document file={pdf} className="d-flex justify-content-center">
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
+          <hr style={{ width: '100%', border: '1px solid black' }} /> {/* 添加横线 */}
+          <Document file={pdf} className="d-flex justify-content-center">
+            <Page pageNumber={2} scale={width > 786 ? 1.7 : 0.6} />
+          </Document>
         </Row>
 
         <Row style={{ justifyContent: "center", position: "relative" }}>
